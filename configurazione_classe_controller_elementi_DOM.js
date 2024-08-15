@@ -7,14 +7,14 @@ class Config_class_controller_elementi_DOM {
     constructor(
 
 
-        display = null, 
-        inp = null, 
-        button = null, 
-        lista_parole_italiane = null, 
-        lista_parole_tedesche = null, 
-        lista_probabilita_flashcards = null
+        display, 
+        inp, 
+        button, 
+        lista_parole_italiane, 
+        lista_parole_tedesche, 
+        lista_probabilita_flashcards
 
-        
+
     ){
 
             this.display = display;
