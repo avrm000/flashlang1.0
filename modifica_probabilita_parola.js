@@ -2,7 +2,7 @@
 
 
 
-function modifica_probabilita_parola(controller_elementi_DOM){
+function modifica_probabilita_parola_in_base_alla_correttezza(controller_elementi_DOM){
 
     var input_dellutente = controller_elementi_DOM.configurazione_controller.inp.value;
     var lista_parole_tedesche = controller_elementi_DOM.configurazione_controller.lista_parole_tedesche;

@@ -22,25 +22,6 @@ class Controller_elementi_DOM{
     }
 
 
-    prima_flashcard_allavvio(){
-
-
-        var indice_e_flashcard_random = weighted_random_choice_from_list_function(
-
-            this.configurazione_controller.lista_parole_italiane,
-            this.configurazione_controller.lista_probabilita_flashcards
-
-        );
-
-
-        this.indice_attivo = indice_e_flashcard_random[0];
-        this.parola_italiana_attiva = indice_e_flashcard_random[1];
-        this.parola_tedesca_attiva = this.configurazione_controller.lista_parole_tedesche[this.indice_attivo];
-        this.configurazione_controller.display.textContent = this.parola_italiana_attiva;
-
-
-    }
-
 
     controlla_se_input_corretto(){
 
@@ -49,15 +30,13 @@ class Controller_elementi_DOM{
         var lista_parole_tedesche = this.configurazione_controller.lista_parole_tedesche;
         var indice_attivo = this.indice_attivo;
 
-        modifica_probabilita_parola(this);
+        modifica_probabilita_parola_in_base_alla_correttezza(this);
     
-        
-        casella_di_input.value = lista_parole_tedesche[indice_attivo];
+        mostra_parola_corretta_nella_casella_dinput(this);
     
         setTimeout(() => {
 
             this.prossima_flashcard();
-            casella_di_input.value = '';
     
         }, 800);
     
@@ -68,11 +47,13 @@ class Controller_elementi_DOM{
 
     prossima_flashcard(){
 
-
+        var casella_di_input = this.configurazione_controller.inp;
         var lista_parole_italiane = this.configurazione_controller.lista_parole_italiane;
         var lista_probabilita_flashcards = this.configurazione_controller.lista_probabilita_flashcards;
         var display = this.configurazione_controller.display;
 
+
+        casella_di_input.value = '';
     
         var indice_e_parola_italiana_nuova_flashcard = weighted_random_choice_from_list_function(lista_parole_italiane, lista_probabilita_flashcards);
     
