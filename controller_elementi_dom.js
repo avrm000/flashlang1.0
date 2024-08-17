@@ -26,13 +26,15 @@ class Controller_elementi_DOM{
     controlla_se_input_corretto(){
 
 
-        var casella_di_input = this.configurazione_controller.inp;
         var lista_parole_tedesche = this.configurazione_controller.lista_parole_tedesche;
         var indice_attivo = this.indice_attivo;
+        var parola_tedesca_attiva = lista_parole_tedesche[indice_attivo];
 
         modifica_probabilita_parola_in_base_alla_correttezza(this);
     
         mostra_parola_corretta_nella_casella_dinput(this);
+
+        text_to_speach(parola_tedesca_attiva);
     
         setTimeout(() => {
 

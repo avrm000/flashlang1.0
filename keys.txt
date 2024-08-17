@@ -1,0 +1,5 @@
+openai_api = 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
+
+
+
+lama_api = LA-a480dda865ff42ee8336d3960a6d1bee23fc62c5ea574f0387dfecde82058631
