@@ -1,17 +1,26 @@
 
 
-function crea_lista_probabilita(){
+function crea_lista_probabilita(mode = 'normal'){
 
-    var lista_probabilita_flashcards = [];
 
-    for (var x = 0; x < 1000; x++){
+    if (mode == 'normal'){
+        
 
-        lista_probabilita_flashcards.push(1);
+        return crea_lista_probabilita_normale();
+
+
+    } else if (mode == 'inverse'){
+
+        
+        return crea_lista_probabilita_inversa();
+
+
+
+    } else if (mode == 'linear'){
+
+        return crea_lista_probabilita_lineare();
 
     }
-
-    return lista_probabilita_flashcards;
-
 
 }
 
