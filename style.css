@@ -4,4 +4,34 @@ body {
     align-items: center;
     flex-direction: column;
     height: 70vh;
+    background-color: #060B10;
+}
+
+#inp {
+    background-color: #12181F;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#display {
+    color: white;
+    font-size: 60px;
+}
+
+#bottone {
+    background-color: #8EFBF7;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 265px;
+    height: 40px;
+    color: #0C2A2A;
+    font-weight: bolder;
+    font-size: 20px;
 }
