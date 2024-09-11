@@ -18,13 +18,20 @@
     <script src='js-probabilità/crea_lista_probabililta_normale.js'></script>
     <script src='js-probabilità/crea_lista_probabilita_inversa.js'></script>
     <script src='js-probabilità/crea_lista_probabilita_lineare.js'></script>
+    <script src='js-elementi_dom/c_button.js'></script>
+    <script src='js-elementi_dom/s_button.js'></script>
+    <script src='js-elementi_dom/z_button.js'></script>
 </head>
 <body>
     <h1 id = display>display</h1>
     <input type="text" id="inp">
     <button id = bottone onclick=controller_elementi_DOM.controlla_se_input_corretto()>avanti</button>
 
-
+    <div id = letters>
+        <button class = letter id = 'c' onclick="c_button()">Č</button>
+        <button class = letter id = 's' onclick="s_button()">Š</button>
+        <button class = letter id = 'z' onclick="z_button()">Ž</button>
+    </div>
 
     <script src = 'main.js'></script>
 </body>

@@ -6,7 +6,7 @@ function text_to_speach(parola) {
 
     const utterance = new SpeechSynthesisUtterance(parola);
 
-    utterance.lang = 'de-DE'; 
+    utterance.lang = 'sl-SI'; 
 
     // Puoi impostare la velocità della voce (opzionale)
     utterance.rate = 1; 
