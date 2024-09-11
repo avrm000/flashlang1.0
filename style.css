@@ -35,3 +35,27 @@ body {
     font-weight: bolder;
     font-size: 20px;
 }
+
+.letters {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.letter {
+    
+    background-color: #8EFBF7;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 80px;
+    color: #0C2A2A;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 10px;
+
+
+}
